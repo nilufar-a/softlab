@@ -14,8 +14,11 @@ public static void main(String args[])
 		@Override 
 		public void run() {
 			count++;
+			System.out.print("timer ticks and train moves");
+
 			//WRITE MOVE ENGINE 
 			// WRITE MOVE CAR
+			
 				
 			
 	}
