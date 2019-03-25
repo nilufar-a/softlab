@@ -33,7 +33,7 @@ public class Game {
 	}
 	
 	public void nextLevel() {
-		
+		System.out.println("You passed the first level. CONGRATULATIONS!");
 	}
 	
 	public Map getCurrentLevel() {
@@ -41,7 +41,7 @@ public class Game {
 	}
 	
 	public void endGame() {
-		
+		System.out.println("GAME OVER..");
 	}
 	
 }
