@@ -17,10 +17,11 @@ public class Engine extends Vehicle {
 	public void move(Direction dir) {
 		System.out.println("\n"+this.getObjectName()+" is moving..\n");
 		if(segment!=null) {
+			TrackSegment current=segment;
 			TrackSegment next=segment.getNextSegment(Direction.Up);
 			segment.remove(this);
 			this.setSegment(next);
-			System.out.println("\n"+this.getObjectName()+" has successfully moved from "+segment.getObjectName()+" to "+next.getObjectName()+"!");
+			System.out.println("\n"+this.getObjectName()+" has successfully moved from "+current.getObjectName()+" to "+next.getObjectName()+"!");
 			
 			System.out.println("\nDoes "+this.getObjectName()+" has any car?");
 			if(cars.size()!=0) {
